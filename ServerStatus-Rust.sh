@@ -25,7 +25,8 @@ server_address=${1}         # rust_serverstatus 服务端网址
 WORKDIR=${2}                # 安装目录
 ssr_uid=${3}                # rust_serverstatus 配置文件里的用户名
 passwd=${4}                 # rust_serverstatus 配置文件里用户名对应的密码
-install_server_or_not=${5}  # 空着就不安装服务端
+alias=${5}                  # display name
+install_server_or_not=${6}  # 空着就不安装服务端
 
 mkdir -p ${WORKDIR}
 cd ${WORKDIR}
@@ -47,7 +48,7 @@ After=network.target
 
 [Service]
 WorkingDirectory=${WORKDIR}
-ExecStart=${WORKDIR}/stat_client -a "${server_address}" -g ${ssr_uid} -p ${passwd} -n
+ExecStart=${WORKDIR}/stat_client -a "${server_address}" -g ${ssr_uid} -p ${passwd} --alias ${alias} -n
 ExecReload=/bin/kill -HUP \$MAINPID
 Restart=on-failure
 
