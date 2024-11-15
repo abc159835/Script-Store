@@ -47,7 +47,7 @@ After=network.target
 
 [Service]
 WorkingDirectory=${WORKDIR}
-ExecStart=${WORKDIR}/stat_client -a "${server_address}" -u ${ssr_uid} -p ${passwd} -n
+ExecStart=${WORKDIR}/stat_client -a "${server_address}" -g ${ssr_uid} -p ${passwd} -n
 ExecReload=/bin/kill -HUP \$MAINPID
 Restart=on-failure
 
