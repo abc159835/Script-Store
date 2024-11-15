@@ -55,6 +55,10 @@ Restart=on-failure
 WantedBy=multi-user.target
 EOF
 
+systemctl daemon-reload
+systemctl enable --now stat_client
+systemctl status stat_client
+
 # 判断是否部署服务端，不部署就直接退出
 if [[ -z ${install_server_or_not} ]]; then
     exit 1

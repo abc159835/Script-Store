@@ -1,6 +1,6 @@
 # Script-Store
 
-#### ServerStatus-Rust Install
+### ServerStatus-Rust Install
 
 ```
 wget https://raw.githubusercontent.com/abc159835/Script-Store/main/ServerStatus-Rust.sh
