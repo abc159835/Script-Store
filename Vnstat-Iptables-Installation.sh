@@ -64,6 +64,8 @@ while true; do
             block_port
         fi
     fi
+
+    sleep 10
 done
 EOF
 
