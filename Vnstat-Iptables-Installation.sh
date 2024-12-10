@@ -35,8 +35,9 @@ block_port() {
 }
 
 # 检查日期，若为月初则重置 iptables
+# %-d 去掉默认的前导零
 check_and_reset_monthly() {
-    if [[ $(date +%d) -eq 1 ]]; then
+    if [[ $(date +%-d) -eq 1 ]]; then
         reset_iptables
     fi
 }
