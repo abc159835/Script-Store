@@ -21,6 +21,6 @@ wget https://raw.githubusercontent.com/abc159835/Script-Store/main/CloudFlare-DD
 sudo bash CloudFlare-DDNS.sh
 ```
 
-## Useful
+## Credits
 
  - [cloudflare-api-v4-ddns](https://github.com/aipeach/cloudflare-api-v4-ddns)
