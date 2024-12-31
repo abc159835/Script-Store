@@ -18,7 +18,7 @@ sudo bash Vnstat-Iptables.sh
 
 ```
 wget https://raw.githubusercontent.com/abc159835/Script-Store/main/CloudFlare-DDNS.sh
-sudo bash CloudFlare-DDNS.sh
+sudo bash CloudFlare-DDNS.sh "api-key" "prefix.domain" "domian"
 ```
 
 ## Credits
